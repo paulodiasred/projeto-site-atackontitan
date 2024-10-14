@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atack On Titan - Reconhecimento</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <audio id="musica" autoplay loop hidden>
+        <source src="./src/music/Great_Leap_of_the_Species.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        const audio = document.getElementById('musica');
+        audio.addEventListener('loadeddata', () => {
+            audio.volume = 0.3;
+        });
+    </script>
+</head>
+
+<body>
+
+    <main>
+        <div class="esquadrao-reconhecimento">
+            <nav class="listagem1">
+                <ul>
+                    <li class="reconhecimento ativo" id="eren">
+                        <img src="./src/imagens/eren2.png" alt="Eren Yeager">
+                        <span>Eren Yeager</span>
+                    </li>
+
+                    <li class="reconhecimento" id="mikasa">
+                        <img src="./src/imagens/mikasa2.png" alt="Mikasa Ackerman">
+                        <span>Mikasa Ackerman</span>
+                    </li>
+
+                    <li class="reconhecimento" id="armin">
+                        <img src="./src/imagens/armin2.png" alt="Armin Arlert">
+                        <span>Armin Arlert</span>
+                    </li>
+
+                    <li class="reconhecimento" id="reiner">
+                        <img src="./src/imagens/reinar2.png" alt="Reiner Braun">
+                        <span>Reiner Braun</span>
+                    </li>
+
+                    <li class="reconhecimento" id="bertholdt">
+                        <img src="./src/imagens/bertholdt2.png" alt="Bertholdt Hoover">
+                        <span>Bertholdt Hoover</span>
+                    </li>
+
+                    <li class="reconhecimento" id="annie">
+                        <img src="./src/imagens/annie2.png" alt="Annie Leonhart">
+                        <span>Annie Leonhart</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="cartoes-reconhecimento">
+                <div class="cartao-reconhecimento eren aberto" id="cartao-eren">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Eren Yeager</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">O Titã de Ataque</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/eren2.png" alt="Eren Yeager">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Eren Yeager, é um jovem determinado a se vingar dos Titãs após a
+                                destruição de sua cidade. Ele possui a habilidade de se transformar em Titã, o que o
+                                torna peça-chave na luta pela liberdade da humanidade. Sua jornada explora temas de
+                                liberdade e sacrifício, revelando um personagem complexo e decidido.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento mikasa" id="cartao-mikasa">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Mikasa Ackerman</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">A Protetora Implacável</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/mikasa2.png" alt="Mikasa Ackerman">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Mikasa Ackerman, é uma habilidosa e determinada soldada que luta para proteger Eren
+                                Yeager, seu amigo de infância e irmão adotivo. Após perder sua família para bandidos,
+                                ela é resgatada por Eren, e desde então, dedica-se a protegê-lo. Mikasa é conhecida por
+                                sua força, destreza no combate e lealdade inabalável, tornando-se uma das lutadoras mais
+                                formidáveis contra os Titãs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento armin" id="cartao-armin">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Armin Arlert</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">O Estrategista Brilhante</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/armin2.png" alt="Armin Arlert">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Armin Arlert é um soldado inteligente e perspicaz, conhecido por sua mente estratégica e
+                                habilidade de pensar rápido em situações de perigo. Embora inicialmente inseguro sobre
+                                suas capacidades físicas, Armin se torna um elemento crucial nas missões, provando seu
+                                valor como estrategista e amigo leal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento reiner" id="cartao-reiner">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Reiner Braun</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">O Titã Blindado</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/reinar2.png" alt="Reiner Braun">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Reiner Braun é um soldado forte e determinado, capaz de se transformar no Titã Blindado.
+                                Ele é um líder nato, mas sofre com um conflito interno entre suas missões como guerreiro
+                                e seu vínculo com os companheiros de batalhão. Sua dualidade faz dele um personagem
+                                complexo e instável.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento bertholdt" id="cartao-bertholdt">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Bertholdt Hoover</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">O Titã Colossal</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/bertholdt2.png" alt="Bertholdt Hoover">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Bertholdt Hoover é um soldado silencioso e introspectivo, conhecido por sua habilidade de
+                                se transformar no Titã Colossal. Apesar de sua natureza calma, ele carrega um grande
+                                peso emocional por suas ações e a responsabilidade de destruir muralhas. Seu dilema
+                                interno entre lealdade e culpa define seu papel na trama.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento annie" id="cartao-annie">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Annie Leonhart</h2>
+                        </div>
+
+                        <span class="titan">A Titã Fêmea</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/annie2.png" alt="Annie Leonhart">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Annie Leonhart é uma soldada reservada e solitária, conhecida por sua habilidade de se
+                                transformar no Titã Fêmea. Treinada em artes marciais, ela é uma lutadora excepcional e
+                                eficiente. Annie mantém distância emocional dos outros, focando apenas em cumprir sua
+                                missão, mesmo que isso a deixe isolada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento levi" id="cartao-levi">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Levi Ackerman</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">O Capitão Implacável</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/levi2.png" alt="Levi Ackerman">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Levi Ackerman é o capitão da Tropa de Exploração, conhecido por sua força e habilidades
+                                de combate inigualáveis. Impiedoso no campo de batalha e disciplinado, ele é dedicado a
+                                proteger seus companheiros e eliminar os Titãs. Apesar de sua postura fria, Levi
+                                demonstra um forte senso de justiça e lealdade.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento hange" id="cartao-hange">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Hange Zoë</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">A Cientista Curiosa</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/hang2.png" alt="Hange Zoë">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Hange Zoë é uma comandante da Tropa de Exploração, fascinada pelos Titãs e pelas
+                                possibilidades científicas que eles apresentam. De personalidade excêntrica e
+                                energética, Hange é determinada a descobrir a verdade sobre os Titãs, equilibrando sua
+                                paixão pela pesquisa com a responsabilidade de liderar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento erwin" id="cartao-erwin">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Erwin Smith</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">O Comandante Visionário</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/erwin2.png" alt="Erwin Smith">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Erwin Smith é o comandante da Tropa de Exploração, conhecido por sua liderança
+                                carismática e visão estratégica. Ele está disposto a sacrificar tudo, inclusive sua
+                                vida, para descobrir a verdade sobre os Titãs e o mundo além das muralhas. Erwin é um
+                                líder inspirador que luta pelo bem maior, mesmo que isso o coloque em situações
+                                moralmente difíceis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento jean" id="cartao-jean">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Jean Kirschtein</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">O Realista</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/jean2.png" alt="Jean Kirschtein">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Jean Kirschtein é um soldado pragmático, conhecido por sua visão realista e por
+                                questionar a guerra contra os Titãs. Ele tem um forte senso de responsabilidade e
+                                desenvolve habilidades de liderança, apesar de seu desejo inicial de buscar uma vida
+                                tranquila. Jean é um amigo fiel e protetor de seus companheiros.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento conny" id="cartao-conny">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Conny Springer</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">O Espírito Livre</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/connie2.png" alt="Conny Springer">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Conny Springer é um soldado amigável e de bom coração, conhecido por seu espírito
+                                otimista. Apesar de sua aparência despreocupada, ele enfrenta grandes desafios
+                                emocionais ao descobrir a verdade sobre sua família e a origem dos Titãs. Conny é um
+                                companheiro dedicado, sempre disposto a ajudar os amigos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao-reconhecimento sasha" id="cartao-sasha">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Sasha Braus</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">A Caçadora</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/sasha2.png" alt="Sasha Braus">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Sasha Braus é uma soldada habilidosa com um talento especial para rastreamento e arco e
+                                flecha. Conhecida por seu grande apetite e espírito alegre, ela se destaca por sua
+                                habilidade de sobrevivência. Sasha é corajosa e leal aos seus amigos, trazendo leveza em
+                                momentos de tensão.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="cartao-reconhecimento" id="cartao-floch">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Floch Forster</h2>
+                        </div>
+
+                        <span class="titan">O Idealista Radical</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/floch2.png" alt="Floch Forster">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Floch Forster é um soldado que se torna fervoroso em suas convicções após enfrentar a
+                                realidade brutal da guerra. Inicialmente inseguro, ele se transforma em um idealista
+                                implacável, acreditando na necessidade de sacrifícios para alcançar um futuro melhor.
+                                Floch é um personagem controverso e decisivo.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="cartao-reconhecimento" id="cartao-christa">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Christa Lenz</h2>
+                            <!-- <span>Titan de Ataque</span> -->
+                        </div>
+
+                        <span class="titan">A Deusa da Compaixão</span>
+
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/christa2.png" alt="Christa Lenz">
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+
+                            <p>Christa Lenz, cujo verdadeiro nome é Historia Reiss, é uma soldada gentil e altruísta,
+                                conhecida por sua atitude compassiva e por sempre ajudar os outros. Apesar de sua
+                                aparência frágil, ela esconde uma força interior e um passado complexo como herdeira
+                                legítima da família real. Sua jornada envolve aceitar sua verdadeira identidade e lutar
+                                pelo que acredita, assumindo um papel crucial na batalha pelo futuro da humanidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="listagem2">
+                <ul>
+                    <li class="reconhecimento" id="hange">
+                        <img src="./src/imagens/hang2.png" alt="Hange Zoë">
+                        <span>Hange Zoë</span>
+                    </li>
+
+                    <li class="reconhecimento" id="erwin">
+                        <img src="./src/imagens/erwin2.png" alt="Erwin Smith">
+                        <span>Erwin Smith</span>
+                    </li>
+
+                    <li class="reconhecimento" id="jean">
+                        <img src="./src/imagens/jean2.png" alt="Jean Kirschtein">
+                        <span>Jean Kirschtein</span>
+                    </li>
+
+                    <li class="reconhecimento" id="conny">
+                        <img src="./src/imagens/connie2.png" alt="Conny Springer">
+                        <span>Conny Springer</span>
+                    </li>
+
+                    <li class="reconhecimento" id="sasha">
+                        <img src="./src/imagens/sasha2.png" alt="Sasha Braus">
+                        <span>Sasha Braus</span>
+                    </li>
+
+                    <li class="reconhecimento" id="levi">
+                        <img src="./src/imagens/levi2.png" alt="Levi Ackerman">
+                        <span>Levi Ackerman</span>
+                    </li>
+                    <!-- <li class="reconhecimento" id="floch">
+                        <img src="./src/imagens/floch2.png" alt="Floch Forster">
+                        <span>Floch Forster</span>
+                    </li> -->
+
+                    <!-- <li class="reconhecimento" id="christa">
+                        <img src="./src/imagens/christa2.png" alt="Christa Lenz">
+                        <span>Christa Lenz</span> -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
