@@ -1,5 +1,7 @@
 # Projeto de Site Esquadrão de Reconhecimento Attack on Titan
 
+![tela inicial](src/imagens/aot1.png)
+
 Este projeto é uma aplicação web que apresenta uma lista de reconhecimentos, permitindo que os usuários cliquem em cada item para exibir mais informações em cartões dinâmicos. O projeto utiliza HTML, CSS e JavaScript para fornecer uma interface interativa e responsiva.
 
 ## Tecnologias Utilizadas
